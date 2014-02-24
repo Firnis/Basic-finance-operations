@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic finance functions</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<section>
+			<input type="text" id="code" />
+			<textarea id="result" disabled="disabled"></textarea>
+		</section>
+		<aside>
+			<ul>
+				<li><button data-formula="PV( %, NPer, pmt, fv )">PV</button></li>
+				<li><button data-formula="FV( %, NPer, pmt, pv )">FV</button></li>
+				<li><button data-formula="PMT( %, NPer, pv, fv )">PMT</button></li>
+				<li><button data-formula="EAR( %, NPer )">EAR</button></li>
+			</ul>
+			<ul>
+				<li>
+					<label>
+						%:
+						<input type="text" id="percents" />
+					</label>
+				</li>
+				<li>
+					<label>
+						NPer:
+						<input type="text" id="period" />
+					</label>
+				</li>
+			</ul>
+		</aside>
+		<script src="./functions.js" type="text/javascript"></script>
+		<script src="./editor.js" type="text/javascript"></script>
+	</body>
+</html>
